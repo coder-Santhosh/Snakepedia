@@ -1,0 +1,191 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /* font: 15px/1.5 Arial, Helvetica, sans-serif; */
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header a, .container > h1,h3, .btn{
+    text-transform: capitalize;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+header a:active{
+    color: gray;
+}
+
+.btn{
+    height: 32px;
+    padding: 0 20px;
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+
+}
+/* Header */
+header{
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 25px;
+    min-height: 80px;
+    border-bottom: #e8491d 4px solid;
+}
+
+header h1{
+    font-size: 35px;
+    float: left;
+    margin: 0;
+    color: silver;
+}
+
+/* nav bar */
+header a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: medium;
+}
+
+header li{
+    /* list-style-type: none; */
+    display: inline;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+.current{
+    color: #e8491d;
+}
+
+nav{
+    float: right;
+    padding-top: 15px;
+}
+
+/* main area */
+#main-content{
+    min-height: 400px;
+    /* text-align: center; */
+    background: url('../img/forest_evening.jpg') repeat-x  -100px;
+    color: aqua;
+    text-align: center;
+}
+
+#main-content h1{
+    margin-top: 105px;
+    font-size: 50px;
+}
+
+#main-content p{
+    font-size: 20px;
+}
+
+/* feeds*/
+#feeds{
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+#feeds h1{
+    float: left;
+}
+
+#feeds form{
+    margin-top: 15px;
+    float: right;
+}
+
+#feeds input[type='email']{
+    padding: 4px;
+    height:20px;
+    width: 250px;
+}
+
+/* box content */
+.box img{
+    max-width: 50%;
+    aspect-ratio: 16/9;
+    width: auto;
+
+}
+
+
+#boxes .box{
+    padding: 20px;
+    text-align: center;
+    float: left;
+    width: 28%;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    background-color: #e8491d;
+    color: #ffffff;
+    padding: 20px;
+    /* margin-top: 20px; */
+}
+
+/* responsive media queries */
+@media screen and (max-width: 955px)  and (min-width: 0px){ 
+    header h1, header nav,header nav li, #feeds h1, #feeds form, #boxes .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #main-content h1{
+        margin-top: 50px;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+
+    #feeds form input[type='email']{
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #feeds .btn{
+        display: block;
+        width: 100%;
+    }
+
+    #boxes .box {
+        /* margin: 0;
+        padding: 0; */
+        /* height: auto; */
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Styles for screens with a minimum width of 769 pixels (e.g., 955px) */
+    
+    #boxes .box {
+        width: auto; /* Adjust this value to suit your layout */
+    }
+  }
+  
